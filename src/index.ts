@@ -8,6 +8,11 @@ app.use("/api/estudiantes", estudiantesRouter);
 
 const objetoJSON = { status: "Servidor en línea", version: "1.0.0" };
 
+import swaggerUi from "swagger-ui-express";
+import swaggerOutput from "../src/swagger_output.json" with { type: "json" };
+
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerOutput));
+
 app.get("/api/status", function (req, res) {
   res.send(objetoJSON);
 });

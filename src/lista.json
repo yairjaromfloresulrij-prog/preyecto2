@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nombre": "Juan Pérez",
+    "email": "juan.perez@gmail.com",
+    "bootcamp": "Full Stack"
+  },
+  {
+    "id": 2,
+    "nombre": "María González",
+    "email": "maria.gonzalez@gmail.com",
+    "bootcamp": "Backend"
+  },
+  {
+    "id": 3,
+    "nombre": "Carlos Rodríguez",
+    "email": "carlos.rodriguez@gmail.com",
+    "bootcamp": "Frontend"
+  },
+  {
+    "id": 4,
+    "nombre": "Sofía Martínez",
+    "email": "sofia.martinez@gmail.com",
+    "bootcamp": "Full Stack"
+  },
+  {
+    "id": 5,
+    "nombre": "Diego Fernández",
+    "email": "diego.fernandez@gmail.com",
+    "bootcamp": "Backend"
+  },
+  {
+    "id": 6,
+    "nombre": "Lucía López",
+    "email": "lucia.lopez@gmail.com",
+    "bootcamp": "Frontend"
+  },
+  {
+    "id": 7,
+    "nombre": "Mateo Sánchez",
+    "email": "mateo.sanchez@gmail.com",
+    "bootcamp": "Full Stack"
+  },
+  {
+    "id": 8,
+    "nombre": "Valentina Romero",
+    "email": "valentina.romero@gmail.com",
+    "bootcamp": "Backend"
+  },
+  {
+    "id": 9,
+    "nombre": "Nicolás Torres",
+    "email": "nicolas.torres@gmail.com",
+    "bootcamp": "Frontend"
+  },
+  {
+    "id": 10,
+    "nombre": "Camila Herrera",
+    "email": "camila.herrera@gmail.com",
+    "bootcamp": "Full Stack"
+  }
+]

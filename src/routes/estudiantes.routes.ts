@@ -1,12 +1,14 @@
 import { Router } from "express";
 import type { Request, Response } from "express";
 import type { Estudiante } from "../types/estudiantes.types.js";
-
+import estudiantesData from "../lista.json" with { type: "json" };
 const router: Router = Router();
 
-const estudiantes: Estudiante[] = [];
+const estudiantes: Estudiante[] = estudiantesData;
 
 router.get("/", function (req: Request, res: Response) {
+  // #swagger.tags = ['Estudiantes']
+  // #swagger.summary = 'Obtener todos los estudiantes'
   const bootcamp = req.query.bootcamp;
 
   if (bootcamp) {
@@ -35,6 +37,8 @@ router.get("/:id", function (req: Request, res: Response) {
 });
 
 router.post("/", function (req: Request, res: Response) {
+  // #swagger.tags = ['Estudiantes']
+  // #swagger.summary = 'Crear un nuevo estudiante'
   const { nombre, email, bootcamp } = req.body;
 
   if (!email) {
@@ -55,6 +59,8 @@ router.post("/", function (req: Request, res: Response) {
   res.status(201).json(nuevoEstudiante);
 });
 router.delete("/:id", function (req: Request, res: Response) {
+  // #swagger.tags = ['Estudiantes']
+  // #swagger.summary = 'Eliminar un estudiante'
   const id = Number(req.params.id);
 
   const posicion = estudiantes.findIndex(function (e) {
@@ -72,6 +78,8 @@ router.delete("/:id", function (req: Request, res: Response) {
   res.json(eliminado[0]);
 });
 router.put("/:id", function (req: Request, res: Response) {
+  // #swagger.tags = ['Estudiantes']
+  // #swagger.summary = 'Actualizar un estudiante'
   const idBuscado = Number(req.params.id);
 
   const index = estudiantes.findIndex(function (e) {
